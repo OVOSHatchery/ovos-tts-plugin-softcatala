@@ -3,16 +3,16 @@ from setuptools import setup
 
 
 PLUGIN_ENTRY_POINT = 'softcatala_tts_plug = ' \
-                     'mycroft_tts_plugin_softcatala:SoftcatalaTTSPlugin'
+                     'jarbas_tts_plugin_softcatala:SoftcatalaTTSPlugin'
 setup(
-    name='mycroft-tts-plugin-softcatala',
+    name='jarbas-tts-plugin-softcatala',
     version='0.1',
     description='A catalan tts plugin for mycroft',
-    url='https://github.com/OpenJarbas/mycroft-tts-plugin-softcatala',
+    url='https://github.com/JarbasLingua/jarbas-tts-plugin-softcatala',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['mycroft_tts_plugin_softcatala'],
+    packages=['jarbas_tts_plugin_softcatala'],
     install_requires=["requests"],
     zip_safe=True,
     classifiers=[

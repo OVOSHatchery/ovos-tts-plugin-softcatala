@@ -9,7 +9,7 @@ more info in the [docs](https://mycroft-ai.gitbook.io/docs/mycroft-technologies/
 
 Build and run the [docker image from softcatala](https://github.com/Softcatala/tts-service)
 
-`mycroft-pip install mycroft-tts-plugin-softcatala`
+`mycroft-pip install jarbas-tts-plugin-softcatala`
 
 ## Configuration
 
