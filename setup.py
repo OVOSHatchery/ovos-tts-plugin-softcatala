@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
-from os.path import join, abspath, dirname
 from setuptools import setup
 
-with open(join(dirname(abspath(__file__)), 'requirements.txt')) as f:
-    requirements = f.readlines()
 
 PLUGIN_ENTRY_POINT = 'softcatala_tts_plug = ' \
                      'mycroft_tts_plugin_softcatala:SoftcatalaTTSPlugin'
@@ -16,7 +13,7 @@ setup(
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['mycroft_tts_plugin_softcatala'],
-    install_requires=requirements,
+    install_requires=["requests"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
