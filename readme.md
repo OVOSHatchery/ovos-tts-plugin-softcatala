@@ -19,5 +19,6 @@ Build and run the [docker image from softcatala](https://github.com/Softcatala/t
     "softcatala_tts_plug": {
       "url": "http://localhost:8100/speak/"
     }
+  }
  
 ```
