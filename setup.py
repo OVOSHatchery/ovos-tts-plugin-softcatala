@@ -2,18 +2,19 @@
 from setuptools import setup
 
 
-PLUGIN_ENTRY_POINT = 'softcatala_tts_plug = ' \
-                     'jarbas_tts_plugin_softcatala:SoftcatalaTTSPlugin'
+PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-softcatala = ' \
+                     'ovos_tts_plugin_softcatala:SoftcatalaTTSPlugin'
 setup(
-    name='jarbas-tts-plugin-softcatala',
-    version='0.1',
+    name='ovos-tts-plugin-softcatala',
+    version='0.1.0',
     description='A catalan tts plugin for mycroft',
-    url='https://github.com/JarbasLingua/jarbas-tts-plugin-softcatala',
+    url='https://github.com/OpenVoiceOS/ovos-tts-plugin-softcatala',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['jarbas_tts_plugin_softcatala'],
-    install_requires=["requests"],
+    packages=['ovos_tts_plugin_softcatala'],
+    install_requires=["ovos-plugin-manager>=0.0.1a7",
+                      "requests"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -32,6 +33,6 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
-    keywords='mycroft plugin tts',
+    keywords='mycroft ovos plugin tts',
     entry_points={'mycroft.plugin.tts': PLUGIN_ENTRY_POINT}
 )
