@@ -6,14 +6,14 @@ PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-softcatala = ' \
                      'ovos_tts_plugin_softcatala:SoftcatalaTTSPlugin'
 setup(
     name='ovos-tts-plugin-softcatala',
-    version='0.1.0',
+    version='0.1.1',
     description='A catalan tts plugin for mycroft',
     url='https://github.com/OpenVoiceOS/ovos-tts-plugin-softcatala',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_tts_plugin_softcatala'],
-    install_requires=["ovos-plugin-manager>=0.0.1a7",
+    install_requires=["ovos-plugin-manager>=0.0.1a12",
                       "requests"],
     zip_safe=True,
     classifiers=[
